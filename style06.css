@@ -1,0 +1,327 @@
+:root {
+  /* Paleta de colores exacta de tildegit.org */
+  --bg-main: #f8f9fa;
+  --bg-white: #ffffff;
+  --text-primary: #222222;
+  --text-secondary: #666666;
+  --text-muted: #999999;
+  --link-color: #4169e1;
+  --link-hover: #2a4d8a;
+  --border-color: #e1e4e8;
+  --hover-bg: #f6f8fa;
+  --icon-color: #6a737d;
+  --active-tab-border: #4169e1;
+  --language-tag-bg: #f1f8ff;
+  --language-tag-text: #0366d6;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  background-color: var(--bg-main);
+  margin: 0;
+  padding: 0;
+  color: var(--text-primary);
+  line-height: 1.5;
+}
+
+/* Layout principal */
+.main-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 260px;
+  background: var(--bg-white);
+  border-right: 1px solid var(--border-color);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.content-area {
+  flex: 1;
+  /*padding: 20px 30px;*/
+  /*background: var(--bg-main);*/
+  background: var(--bg-white);
+}
+
+/* Tarjeta de perfil */
+.profile-card {
+  background: var(--bg-white);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.profile-header {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--text-primary);
+}
+
+.profile-meta {
+  color: var(--text-secondary);
+  font-size: 1.0rem;
+  margin-bottom: 15px;
+}
+
+.profile-info {
+  margin-bottom: 15px;
+}
+
+.info-item {
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 1.0rem;
+  color: var(--text-secondary);
+}
+
+.info-item i {
+  margin-right: 8px;
+  color: var(--icon-color);
+}
+
+.info-item a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.info-item a:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+.profile-stats {
+  text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid var(--border-color);
+  margin-top: 15px;
+}
+
+.stats-value {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.stats-label {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+/* Sección de actividad */
+.activity-section {
+  background: var(--bg-white);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 15px;
+}
+
+.activity-section h4 {
+  margin: 0 0 10px 0;
+  font-size: 1rem;
+  color: var(--text-primary);
+}
+
+.activity-section p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+/* Contenido principal */
+.repositories-container {
+  background: var(--bg-white);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 20px;
+}
+
+.repositories-container h3 {
+  margin: 0 0 15px 0;
+  font-size: 1.3rem;
+  color: var(--text-primary);
+}
+
+/* Menú de repositorios */
+.repositories-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 10px;
+}
+
+.repositories-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--text-primary);
+}
+
+.repositories-menu {
+  display: flex;
+  gap: 15px;
+}
+
+.repositories-menu a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 5px 0;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.repositories-menu a.active {
+  color: var(--active-tab-border);
+  font-weight: 600;
+}
+
+.repositories-menu a.active:after {
+  content: '';
+  position: absolute;
+  bottom: -11px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: var(--active-tab-border);
+}
+
+.repositories-menu a:hover {
+  color: var(--link-color);
+}
+
+/* Lista de repositorios */
+.repository-list {
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+}
+
+.repository-item {
+  display: flex;
+  padding: 12px 15px;
+  border-bottom: 1px solid var(--border-color);
+  align-items: flex-start;
+  transition: background-color 0.2s ease;
+}
+
+.repository-item:last-child {
+  border-bottom: none;
+}
+
+.repository-item:hover {
+  background-color: var(--hover-bg);
+}
+
+.repository-item i {
+  color: var(--icon-color);
+  margin-right: 10px;
+  margin-top: 3px;
+}
+
+.repository-details {
+  flex: 1;
+}
+
+.repo-name {
+  color: var(--link-color);
+  font-weight: 600;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.repo-name:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+.repo-description {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin: 0 0 4px 0;
+}
+
+.repo-meta {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+/* Filtros de lenguaje */
+.language-filters {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.filter-title {
+  margin-right: 15px;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.filter-title span:last-child {
+  color: var(--link-color);
+  cursor: pointer;
+}
+
+.filter-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.language-tag {
+  background: var(--language-tag-bg);
+  color: var(--language-tag-text);
+  border-radius: 3px;
+  padding: 3px 8px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.language-tag:hover {
+  background-color: #def;
+}
+
+.tag-count {
+  color: var(--text-muted);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+  }
+  
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .content-area {
+    padding: 15px;
+  }
+  
+  .repositories-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .repositories-menu {
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 5px;
+  }
+  
+  .repository-item {
+    padding: 10px;
+  }
+}

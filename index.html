@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTP.Informática</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.8/dist/semantic.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style06.css">
+</head>
+<body>
+    <div class="main-container">
+        <!-- Barra lateral izquierda -->
+        <div class="sidebar">
+            <div class="profile-card">
+                <div class="profile-header">2025-2026</div>
+                <div class="profile-meta">
+                    <i class="user icon"></i>
+                    <span>34</span>
+                    <span>·</span>
+                    <span>Alumnos</span>
+                </div>
+                <div class="profile-info">
+                    <div class="info-item">
+                        <i class="id card icon"></i>
+                        <span>3</span>
+                        <span>·</span>
+                        <span>Docentes</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="linkify icon"></i>
+                        <a href="https://jorgeabiatar.runacode.com/public/login">RunaChay</a>
+                    </div>
+                </div>
+                <div class="profile-stats">
+                    <!--<div class="stats-value">Trabajando ...</div>
+                    <i class="fa-solid fa-cog fa-spin fa-1x" style="--fa-animation-duration: 4s;"></i>-->
+                    <div style="display: inline-flex; align-items: center; gap: 18px;">
+                    <span style="display: inline; margin: 0; font-size: 1.2em; font-weight: bold;">Trabajando ...</span>
+                    <i class="fa-solid fa-cog fa-spin fa-1x" style="--fa-animation-duration: 4s;"></i>
+                    </div>
+                    <div class="stats-label">Repositorios</div>
+                </div>
+            </div>
+
+            <style> 
+                .activity-section + .activity-section {
+                    margin-top: 20px;
+                }
+            </style>    
+            
+            <div class="activity-section">
+                <h4>Actividad</h4>
+                <p style="display: inline-flex; align-items: center; gap: 8px; margin: 0;">
+                    Sitio operativo
+                    <i class="fa-solid fa-lock fa-shake fa-3x" style="--fa-animation-duration: 7s; color:#4169e1;"></i>
+                </p>
+            </div>
+
+            <div class="activity-section">
+                <h4>Icnnos</h4>
+                <p>Básicos</p>
+                <i class="home icon"></i>
+                <i class="user icon"></i>
+                <i class="settings icon"></i>
+                <i class="search icon"></i>
+                <i class="trash icon"></i>
+                <i class="star icon"></i>
+
+                <p>Ubicación</p>
+                <i class="map marker icon"></i>
+                <i class="globe icon"></i>
+                <i class="compass icon"></i>
+                <i class="location arrow icon"></i>
+
+                <p>Enlaces y redes</p>
+                <i class="linkify icon"></i>
+                <i class="share icon"></i>
+                <i class="facebook icon"></i>
+                <i class="twitter icon"></i>
+                <i class="instagram icon"></i>
+
+                <p>Tiempo y fechas</p>
+                <i class="calendar icon"></i>
+                <i class="clock icon"></i>
+                <i class="hourglass icon"></i>
+
+                <p>Archivos y documentos</p>
+                <i class="file icon"></i>
+                <i class="folder icon"></i>
+                <i class="pdf icon"></i>
+                <i class="file pdf icon"></i>
+                <i class="download icon"></i>
+
+                <p>Multimedia</p>
+                <i class="image icon"></i>
+                <i class="video icon"></i>
+                <i class="music icon"></i>
+                <i class="camera icon"></i>
+
+                <p>Acciones</p>
+                <i class="edit icon"></i>
+                <i class="save icon"></i>
+                <i class="delete icon"></i>
+                <i class="refresh icon"></i>
+
+                <p>Emociones</p>
+                <i class="heart icon"></i>
+                <i class="thumbs up icon"></i>
+                <i class="smile icon"></i>
+                <i class="frown icon"></i>
+            </div>
+        </div>
+
+        <!-- Contenido principal -->
+        <div class="content-area">
+            <div class="repositories-container">
+                <h3>BT, Informática 2025/2026</h3>
+                <div class="divider"></div>
+                
+                <!-- Menú horizontal de repositorios -->
+                <div class="repositories-nav">
+                    <div class="repositories-title">Repositorios</div>
+                    <nav class="repositories-menu">
+                        <a href="#" class="active">Archivados</a>
+                        <!--<a href="#">Espejos</a>-- para que aparesca en el menu > -->
+                        <a href="#">Contenidos</a>
+                        <a href="#">Templates</a>
+                        <a href="#">Backups</a>
+                        <a href="#">Librerías</a>
+                        <a href="#">Plugins</a>
+                    </nav>
+                </div>
+                
+                <!-- Lista de repositorios -->
+                <div class="repository-list">
+                    <!-- Repositorios Archivados (3) -->
+                    <div class="repository-item archived">
+                        <i class="archive icon"></i>
+                        <div class="repository-details">
+                            <a href="#" class="repo-name">archived-1</a>
+                            <p class="repo-description">Repositorio archivado 1</p>
+                            <p class="repo-meta">Actualizado hace 2 años</p>
+                        </div>
+                    </div>
+                    
+                    <div class="repository-item archived">
+                        <i class="archive icon"></i>
+                        <div class="repository-details">
+                            <a href="#" class="repo-name">archived-2</a>
+                            <p class="repo-description">Repositorio archivado 2</p>
+                            <p class="repo-meta">Actualizado hace 3 años</p>
+                        </div>
+                    </div>
+                    
+                    <div class="repository-item archived">
+                        <i class="archive icon"></i>
+                        <div class="repository-details">
+                            <a href="#" class="repo-name">archived-3</a>
+                            <p class="repo-description">Repositorio archivado 3</p>
+                            <p class="repo-meta">Actualizado hace 4 años</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Repositorios Espejos (3) -->
+                    <div class="repository-item mirror">
+                        <i class="file alternate outline icon"></i>
+                        <div class="repository-details">
+                            <a href="#" class="repo-name">Aplicaciones ofimáticas locales y en línea.</a>
+                            <p class="repo-description">AOLI1T</p>
+                            <p class="repo-meta">Primero técnico.</p>
+                            <a href="https://publiweb.github.io/AOLI1T/">Ver contenido (Index) SITIO EXTERNO</a>
+                        </div>
+                    </div>
+                    
+                    <div class="repository-item mirror">
+                        <i class="clone icon"></i>
+                        <div class="repository-details">
+                            <a href="#" class="repo-name">mirror-2</a>
+                            <p class="repo-description">Repositorio espejo 2</p>
+                            <p class="repo-meta">Actualizado hoy</p>
+                        </div>
+                    </div>
+                    
+                    <div class="repository-item mirror">
+                        <i class="share square icon"></i>
+                        <div class="repository-details">
+                            <a href="#" class="repo-name">Ediciones Espinosa</a>
+                            <p class="repo-description">Catálogo de textos para bachillerato</p>
+                            <p class="repo-meta">Sitio externo de terceros</p>
+                            <a href="https://edicionesespinosa.com/biblioteca-virtual/">Ver contenido (Index) SITIO EXTERNO</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Repositorios Templates (3) -->
+                    <div class="repository-item template">
+                        <i class="file code icon"></i>
+                        <div class="repository-details">
+                            <a href="#" class="repo-name">template-1</a>
+                            <p class="repo-description">Plantilla proyecto 1</p>
+                            <p class="repo-meta">Actualizado hace 1 semana</p>
+                        </div>
+                    </div>
+                    
+                    <div class="repository-item template">
+                        <i class="file code icon"></i>
+                        <div class="repository-details">
+                            <a href="#" class="repo-name">template-2</a>
+                            <p class="repo-description">Plantilla proyecto 2</p>
+                            <p class="repo-meta">Actualizado hace 2 semanas</p>
+                        </div>
+                    </div>
+                    
+                    <div class="repository-item template">
+                        <i class="file code icon"></i>
+                        <div class="repository-details">
+                            <a href="#" class="repo-name">template-3</a>
+                            <p class="repo-description">Plantilla proyecto 3</p>
+                            <p class="repo-meta">Actualizado hace 3 semanas</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Repositorios Backups (3) -->
+                    <div class="repository-item backup">
+                        <i class="save icon"></i>
+                        <div class="repository-details">
+                            <a href="#" class="repo-name">backup-1</a>
+                            <p class="repo-description">Copia de seguridad 1</p>
+                            <p class="repo-meta">Actualizado hace 1 mes</p>
+                        </div>
+                    </div>
+                    
+                    <div class="repository-item backup">
+                        <i class="save icon"></i>
+                        <div class="repository-details">
+                            <a href="#" class="repo-name">backup-2</a>
+                            <p class="repo-description">Copia de seguridad 2</p>
+                            <p class="repo-meta">Actualizado hace 2 meses</p>
+                        </div>
+                    </div>
+                    
+                    <div class="repository-item backup">
+                        <i class="save icon"></i>
+                        <div class="repository-details">
+                            <a href="#" class="repo-name">backup-3</a>
+                            <p class="repo-description">Copia de seguridad 3</p>
+                            <p class="repo-meta">Actualizado hace 3 meses</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Repositorios Librerías (3) -->
+                    <div class="repository-item library">
+                        <i class="bookmark icon"></i>
+                        <div class="repository-details">
+                            <a href="#" class="repo-name">library-1</a>
+                            <p class="repo-description">Librería de código 1</p>
+                            <p class="repo-meta">Actualizado hace 4 meses</p>
+                        </div>
+                    </div>
+                    
+                    <div class="repository-item library">
+                        <i class="bookmark icon"></i>
+                        <div class="repository-details">
+                            <a href="#" class="repo-name">library-2</a>
+                            <p class="repo-description">Librería de código 2</p>
+                            <p class="repo-meta">Actualizado hace 5 meses</p>
+                        </div>
+                    </div>
+                    
+                    <div class="repository-item library">
+                        <i class="bookmark icon"></i>
+                        <div class="repository-details">
+                            <a href="#" class="repo-name">library-3</a>
+                            <p class="repo-description">Librería de código 3</p>
+                            <p class="repo-meta">Actualizado hace 6 meses</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Repositorios Plugins (3) -->
+                    <div class="repository-item plugin">
+                        <i class="puzzle piece icon"></i>
+                        <div class="repository-details">
+                            <a href="#" class="repo-name">plugin-1</a>
+                            <p class="repo-description">Plugin de extensión 1</p>
+                            <p class="repo-meta">Actualizado hace 1 semana</p>
+                        </div>
+                    </div>
+                    
+                    <div class="repository-item plugin">
+                        <i class="puzzle piece icon"></i>
+                        <div class="repository-details">
+                            <a href="#" class="repo-name">plugin-2</a>
+                            <p class="repo-description">Plugin de extensión 2</p>
+                            <p class="repo-meta">Actualizado hace 2 semanas</p>
+                        </div>
+                    </div>
+                    
+                    <div class="repository-item plugin">
+                        <i class="puzzle piece icon"></i>
+                        <div class="repository-details">
+                            <a href="#" class="repo-name">plugin-3</a>
+                            <p class="repo-description">Plugin de extensión 3</p>
+                            <p class="repo-meta">Actualizado hace 3 semanas</p>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.8/dist/semantic.min.js"></script>
+    <script src="script06.js"></script>
+</body>
+</html>
