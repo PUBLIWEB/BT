@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Variables de estado - filtro inicial Archivados
-    let currentFilter = 'informativo';
+    let currentFilter = null;
     let currentLanguage = 'all';
     
     // Inicializar menú de repositorios
@@ -34,13 +34,12 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Lógica de filtrado para las 6 categorías
             const typeMatch = 
-                (currentFilter === 'informativo' && repo.classList.contains('archived')) ||
-                /*(currentFilter === 'espejos' && repo.classList.contains('mirror')) ||  para cargar menu con minuscula*/
-                (currentFilter === 'contenido me' && repo.classList.contains('mirror')) ||
-                (currentFilter === 'templates' && repo.classList.contains('template')) ||
-                (currentFilter === 'backups' && repo.classList.contains('backup')) ||
+                (currentFilter === 'inicio'    && repo.classList.contains('archived')) ||
+                (currentFilter === 'me-bti'    && repo.classList.contains('mirror')) ||
+                (currentFilter === 'ministerio de educación' && repo.classList.contains('template')) ||
+                (currentFilter === 'backups'   && repo.classList.contains('backup')) ||
                 (currentFilter === 'librerías' && repo.classList.contains('library')) ||
-                (currentFilter === 'enlaces' && repo.classList.contains('plugin'));
+                (currentFilter === 'enlaces'   && repo.classList.contains('plugin'));
             
             const langMatch = currentLanguage === 'all' || repoLang === currentLanguage;
             
